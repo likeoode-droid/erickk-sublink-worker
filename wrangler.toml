@@ -1,0 +1,12 @@
+#:schema node_modules/wrangler/config-schema.json
+name = "erickk-sublink-worker"
+main = "src/worker.jsx"
+compatibility_date = "2024-07-24"
+compatibility_flags = ["nodejs_compat"]
+
+kv_namespaces = [
+  { binding = "SUBLINK_KV", id = "1fd0018a9f754b2e92e2d9b20011165f" }
+]
+
+[assets]
+directory = "./public"
